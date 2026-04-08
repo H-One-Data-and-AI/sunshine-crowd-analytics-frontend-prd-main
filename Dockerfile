@@ -1,5 +1,5 @@
 # Stage 1: Build the React Application
-FROM node:20-alpine AS builder
+FROM node:24-alpine AS builder
 WORKDIR /app
 
 # Copy package files and install ALL dependencies (including dev)
@@ -11,7 +11,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Create the Secure Node.js Server
-FROM node:20-alpine
+FROM node:24-alpine
 WORKDIR /app
 
 # Copy package.json again to install ONLY production dependencies (Express)
