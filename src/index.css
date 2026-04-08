@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-hover-bg:hover {
+    background-color: #282828 !important;
+}
+
+/* Custom styling for MapLibre popups to remove the default white background */
+.maplibregl-popup.custom-popup .maplibregl-popup-content {
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 8px; /* Match your inner content's border-radius if needed */
+}
+
+/* Optional: Style the popup tip (the little arrow) to match your dark theme */
+.maplibregl-popup.custom-popup .maplibregl-popup-tip {
+    border-top-color: #171717; /* This should match your popup's background color */
+}
+
+/* Optional: Style the close button to be more visible on a dark background */
+.maplibregl-popup.custom-popup .maplibregl-popup-close-button {
+    color: #a0a0a0; /* A light grey color */
+    font-size: 20px;
+}
+.maplibregl-popup.custom-popup .maplibregl-popup-close-button:hover {
+    color: #ffffff; /* White on hover */
+    background: transparent;
+}
