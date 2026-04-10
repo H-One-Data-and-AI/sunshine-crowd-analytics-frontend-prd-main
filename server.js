@@ -42,7 +42,7 @@ app.use((req, res, next) => {
     "font-src 'self' data:; " +
     
     // Connections: Allow your backends and auth providers
-    "connect-src 'self' https://api.maptiler.com https://login.microsoftonline.com https://graph.microsoft.com htts://sunshineca-be-sea.azurewebsites.net; " + 
+    "connect-src 'self' https://api.maptiler.com https://login.microsoftonline.com https://graph.microsoft.com https://sunshineca-be-sea.azurewebsites.net; " + 
     
     // Frames: Allow Microsoft Login
     "frame-src 'self' https://login.microsoftonline.com; " +
