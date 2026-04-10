@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://sunshineca-be-sea.azurewebsites.net',
+    baseURL: 'https://sunshineca-be-sea.azurewebsites.net',
 });
 
 export const setupInterceptors = (handleSessionExpired) => {
