@@ -82,9 +82,9 @@ function LoginPage() {
                 Developed by H-One - a Dialog Company
             </div>
             <div className="w-full max-w-4xl -mt-16">
-                {/* <div className={"w-full flex justify-center"}>
+                {<div className={"w-full flex justify-center"}>
                     <img src={logo} className={"w-[210px] mb-0 h-28 "}/>
-                </div> */}
+                </div>}
                 <h2 className="text-white text-4xl font-medium mb-8 text-center">Welcome Back To Crowd Analytics!</h2>
                 <div
                     className="rounded-3xl p-12 shadow-xl"
